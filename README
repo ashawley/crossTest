@@ -1,0 +1,53 @@
+$ sbt
+
+> test
+[info] Passed: Total 2, Failed 0, Errors 0, Passed 2
+[info] Passed: Total 2, Failed 0, Errors 0, Passed 2
+[success] Total time: 6 s, completed Apr 6, 2017 4:03:22 PM
+
+> fooJS/test
+[info] Passed: Total 2, Failed 0, Errors 0, Passed 2
+[success] Total time: 3 s, completed Apr 6, 2017 4:05:47 PM
+
+> fooJVM/test
+[info] Passed: Total 2, Failed 0, Errors 0, Passed 2
+[success] Total time: 0 s, completed Apr 6, 2017 4:05:50 PM
+
+> testOnly -- -v
+[info] Passed: Total 0, Failed 0, Errors 0, Passed 0
+[info] No tests to run for root/test:testOnly
+[info] Test run started
+[info] Test scalajsplugintest.NullTest.nilTest started
+[info] Test run finished: 0 failed, 0 ignored, 1 total, 0.013s
+[info] Test run started
+[info] Test scalajsplugintest.NullTestJava.nilTest started
+[info] Test run finished: 0 failed, 0 ignored, 1 total, 0.015s
+[info] Passed: Total 2, Failed 0, Errors 0, Passed 2
+[info] Test run started
+[info] Test scalajsplugintest.NullTestJs.nilTest started
+[info] Test run finished: 0 failed, 0 ignored, 1 total, 0.007000064s
+[info] Test run started
+[info] Test scalajsplugintest.NullTest.nilTest started
+[info] Test run finished: 0 failed, 0 ignored, 1 total, 0.009000192s
+[info] Passed: Total 2, Failed 0, Errors 0, Passed 2
+[success] Total time: 3 s, completed Apr 6, 2017 4:06:46 PM
+
+> fooJS/testOnly -- -v
+[info] Test run started
+[info] Test scalajsplugintest.NullTestJs.nilTest started
+[info] Test run finished: 0 failed, 0 ignored, 1 total, 0.007000064s
+[info] Test run started
+[info] Test scalajsplugintest.NullTest.nilTest started
+[info] Test run finished: 0 failed, 0 ignored, 1 total, 0.007000064s
+[info] Passed: Total 2, Failed 0, Errors 0, Passed 2
+[success] Total time: 1 s, completed Apr 6, 2017 4:06:51 PM
+
+> fooJVM/testOnly -- -v
+[info] Test run started
+[info] Test scalajsplugintest.NullTestJava.nilTest started
+[info] Test run finished: 0 failed, 0 ignored, 1 total, 0.007s
+[info] Test run started
+[info] Test scalajsplugintest.NullTest.nilTest started
+[info] Test run finished: 0 failed, 0 ignored, 1 total, 0.007s
+[info] Passed: Total 2, Failed 0, Errors 0, Passed 2
+[success] Total time: 0 s, completed Apr 6, 2017 4:06:54 PM
